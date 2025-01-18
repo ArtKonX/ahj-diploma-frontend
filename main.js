@@ -723,7 +723,7 @@ class RegistrationWindow {
   }
 }
 ;// ./src/environment/environment.js
-const API_ROOT = "MISSING_ENV_VAR".API_ROOT || "https://ahj-diploma-backend-kgk7.onrender.com/";
+const API_ROOT = "MISSING_ENV_VAR".API_ROOT || "https://ahj-diploma-backend-kgk7.onrender.com";
 /* harmony default export */ const environment = (API_ROOT);
 ;// ./src/classes/StateApp.js
 class StateApp {
