@@ -7,7 +7,7 @@ import FullApp from "../components/full-app/FullApp";
 import listNamesTypesMessages from "../data/listNamesTypesMessages.json";
 import Loader from "../components/ui/Loader/Loader";
 
-const url = `${API_ROOT}`;
+const url = `${API_ROOT}/`;
 
 const loader = new Loader({ class: "loader" }).element;
 const body = document.querySelector("body");

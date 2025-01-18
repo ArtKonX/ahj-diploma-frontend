@@ -27,7 +27,7 @@ export default class VideoMessage {
 
     const videoName = new Paragraph({
       class: "file-name",
-      text: `Название аудио - ${this.data.name}`,
+      text: `Название видео - ${this.data.name}`,
     }).element;
     const messageDate = new Paragraph({
       class: "message-date",
