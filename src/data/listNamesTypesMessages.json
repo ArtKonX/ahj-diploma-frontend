@@ -1,0 +1,30 @@
+[
+    {
+        "nameRus": "Все сообщения",
+        "nameEng": "allMessages"
+    },
+    {
+        "nameRus": "Избранное",
+        "nameEng": "favourites"
+    },
+    {
+        "nameRus": "Ссылки",
+        "nameEng": "link"
+    },
+    {
+        "nameRus": "Изображения",
+        "nameEng": "image"
+    },
+    {
+        "nameRus": "Видео",
+        "nameEng": "video"
+    },
+    {
+        "nameRus": "Аудио",
+        "nameEng": "audio"
+    },
+    {
+        "nameRus": "Файлы",
+        "nameEng": "application"
+    }
+]

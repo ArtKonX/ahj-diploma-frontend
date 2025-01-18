@@ -1,0 +1,84 @@
+.message-link {
+    margin: 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 750px;
+    width: 100%;
+    height: 1.2em;
+    white-space: nowrap;
+    color: #2C5E13;
+    font-weight: bold;
+    border-left: 2px solid #2C5E13;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background:
+        linear-gradient(currentColor 0 0) 0 100%/var(--d, 0) 2px no-repeat,
+        linear-gradient(currentColor 0 0) 100% 100%/var(--d, 0) 2px no-repeat;
+    transition: 1s;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    display: block;
+
+    &:hover {
+        --d: 51%;
+        padding: 10px;
+    }
+}
+
+.message-link-pin-message {
+    margin: 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 750px;
+    width: 100%;
+    height: 1.2em;
+    white-space: nowrap;
+    color: #2C5E13;
+    font-weight: bold;
+    border-left: 2px solid #2C5E13;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background:
+        linear-gradient(currentColor 0 0) 0 100%/var(--d, 0) 2px no-repeat,
+        linear-gradient(currentColor 0 0) 100% 100%/var(--d, 0) 2px no-repeat;
+    transition: 1s;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+
+    &:hover {
+        --d: 51%;
+        padding: 10px;
+    }
+}
+
+.message-link-file {
+    font-size: 1.1rem;
+    text-decoration: none;
+    max-width: 200px;
+    padding-bottom: 15px;
+    color: #2C5E13;
+
+    background:
+        repeating-linear-gradient(90deg, currentColor 0 15px, transparent 0 30px),
+        repeating-linear-gradient(90deg, currentColor 0 15px, transparent 0 30px);
+    background-position: center bottom;
+    background-size: 2000% 3px;
+    background-repeat: no-repeat;
+    transition: 99999s linear;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    &:hover {
+        background-position: bottom left, bottom right;
+        transition: 40s linear;
+    }
+}

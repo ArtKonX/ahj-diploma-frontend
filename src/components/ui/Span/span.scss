@@ -1,0 +1,68 @@
+.header-burger {
+    background-image: url('../../../svg/icons8-menu.svg');
+    background-size: 33px;
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+}
+
+.header-logo {
+    margin-left: 40px;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    background-image: url('../../../gif/matrix-anim-img.gif');
+    cursor: pointer;
+    transition: 1s;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+.name-user {
+    color: #2C5E13;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-right: 10px;
+}
+
+.file-name-count {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.preview-file {
+    display: block;
+    background-image: url('../../../svg/icons8-file.svg');
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+.span-icon-file {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url('../../../svg/icons8-file.svg');
+    background-size: 50px;
+    margin-right: 10px;
+}
+
+.style-wrapper-files {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    pointer-events: none;
+}

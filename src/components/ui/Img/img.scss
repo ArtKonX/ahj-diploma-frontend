@@ -1,0 +1,26 @@
+.img-file {
+    max-width: 80%;
+    max-height: 550px;
+    object-fit: cover;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-video {
+    width: 50px;
+}
+
+.preview-audio {
+    width: 50px;
+}
+
+.preview-image {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}

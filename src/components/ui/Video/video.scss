@@ -1,0 +1,35 @@
+.video-file {
+    width: calc(100% - 6px);
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+    clip-path: inset(0px round 5px);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    &:hover {
+        border: 3px solid;
+        border-image: linear-gradient(45deg, gold, deeppink) 1;
+        clip-path: inset(0px round 5px);
+        filter: hue-rotate(360deg);
+    }
+
+    &_play {
+        border: 3px solid;
+        border-image: linear-gradient(45deg, gold, deeppink) 1;
+        clip-path: inset(0px round 5px);
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes huerotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

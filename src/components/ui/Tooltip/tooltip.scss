@@ -1,0 +1,71 @@
+.tooltip {
+    position: absolute;
+    z-index: 999;
+    display: block;
+    max-width: 176px;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-break: auto;
+    line-height: 1.5;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    white-space: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: break-word;
+    background-color: rgb(223, 138, 138);
+    background-clip: padding-box;
+    border-radius: 0.9rem;
+}
+
+.tooltip--top {
+    margin-bottom: 0.5rem;
+}
+
+.arrow {
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 1px;
+}
+
+.tooltip--top>.arrow {
+    bottom: calc((0.5rem + 1px) * -1);
+}
+
+.arrow::after,
+.arrow::before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.tooltip--top>.arrow::before {
+    bottom: 2px;
+}
+
+.tooltip--top>.arrow::after {
+    bottom: 2px;
+    border-width: 0.5rem 0.5rem 0;
+    border-top-color: rgb(218, 122, 122);
+}
+
+.tooltip-header {
+    color: antiquewhite;
+    margin: 0;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    background-color: rgb(218, 122, 122);
+    border-top-left-radius: calc(.9rem - 1px);
+    border-top-right-radius: calc(.9rem - 1px);
+    border-bottom-left-radius: calc(.9rem - 1px);
+    border-bottom-right-radius: calc(.9rem - 1px);
+    padding: 8px 12px;
+}

@@ -1,0 +1,17 @@
+.file-name-info-element {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(191, 232, 216);
+    border-radius: 15px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+
+    &_active {
+        border: 2px solid black;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}

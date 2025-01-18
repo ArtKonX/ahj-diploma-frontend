@@ -1,0 +1,20 @@
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border: 16px solid gray;
+    border-radius: 50%;
+    border-top: 16px solid black;
+    animation: spin 2s linear infinite;
+    z-index: 10;
+    z-index: 1001;
+    opacity: 0.9;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
