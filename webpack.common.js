@@ -46,17 +46,13 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css",
     }),
+    new Dotenv(),
     new FileManagerPlugin({
       events: {
-        onStart: {
-          delete: ["dist"],
-        },
         onEnd: {
-          delete: ["dist/*", "!dist/node_modules"], // Adding an exception for node_modules folder
           copy: [{ source: "src/static", destination: "dist" }],
         },
       },
     }),
-    new Dotenv(),
   ],
 };
