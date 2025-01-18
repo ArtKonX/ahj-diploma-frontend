@@ -1,4 +1,5 @@
 import SignInWindow from "../components/sign-in-window/SignInWindow";
+import RegistrationWindow from "../components/registration-window/RegistrationWindow";
 import Div from "../components/ui/Div/Div";
 import API_ROOT from "../environment/environment";
 import StateApp from "../classes/StateApp";
@@ -30,14 +31,31 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   if (!stateApp.load()) {
-    const registrationWindow = new SignInWindow(
-      container,
-      stateApp,
-      fullApp,
-      loader,
-      url,
-    );
-    registrationWindow.bindToDOM();
+    if (!JSON.parse(localStorage.getItem("page"))) {
+      localStorage.setItem("page", JSON.stringify({ page: "singInWindow" }));
+    }
+
+    if (JSON.parse(localStorage.getItem("page")).page == "singInWindow") {
+      const singInWindow = new SignInWindow(
+        container,
+        stateApp,
+        fullApp,
+        loader,
+        url,
+      );
+      singInWindow.bindToDOM();
+    } else if (
+      JSON.parse(localStorage.getItem("page")).page == "registerInWindow"
+    ) {
+      const registrationWindow = new RegistrationWindow(
+        container,
+        stateApp,
+        fullApp,
+        loader,
+        url,
+      );
+      registrationWindow.bindToDOM();
+    }
   } else {
     container.remove();
     fullApp.init();

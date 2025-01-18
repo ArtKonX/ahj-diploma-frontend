@@ -5,7 +5,6 @@ import Heading from "../ui/Heading/Heading";
 import Input from "../ui/Input/Input";
 import Label from "../ui/Label/Label";
 import ChatAPI from "../../js/api/ChatAPI";
-import RegistrationWindow from "../registration-window/RegistrationWindow";
 import WidgetTooltip from "../widget-tooltip/WidgetTooltip";
 
 export default class SignInWindow {
@@ -115,14 +114,9 @@ export default class SignInWindow {
   goToRegistration() {
     this.parentEl.innerHTML = "";
 
-    const registrationWindow = new RegistrationWindow(
-      this.parentEl,
-      this.stateApp,
-      this.fullApp,
-      this.loader,
-      this.url,
-    );
-    registrationWindow.bindToDOM();
+    localStorage.setItem("page", JSON.stringify({ page: "registerInWindow" }));
+
+    location.reload();
   }
 
   onSignIn(e) {

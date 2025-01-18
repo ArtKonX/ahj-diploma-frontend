@@ -41,7 +41,7 @@
     "sass-loader": "^16.0.4",
     "stream-browserify": "^3.0.0",
     "vm-browserify": "^1.1.2",
-    "webpack": "^5.91.0",
+    "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4",
     "webpack-merge": "^5.10.0"

@@ -49,9 +49,8 @@ module.exports = {
     new Dotenv(),
     new FileManagerPlugin({
       events: {
-        onEnd: {
-          copy: [{ source: "src/static", destination: "dist" }],
-        },
+        onStart: { delete: ["dist"] },
+        onEnd: { copy: [{ source: "src/static", destination: "dist" }] },
       },
     }),
   ],

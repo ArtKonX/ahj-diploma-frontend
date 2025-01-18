@@ -6,7 +6,6 @@ import Label from "../ui/Label/Label";
 
 import ChatAPI from "../../js/api/ChatAPI";
 import Heading from "../ui/Heading/Heading";
-import SignInWindow from "../sign-in-window/SignInWindow";
 import validatorForm from "../../utils/validatorForm";
 import WidgetTooltip from "../widget-tooltip/WidgetTooltip";
 
@@ -132,14 +131,9 @@ export default class RegistrationWindow {
   goToSignIn() {
     this.parentEl.innerHTML = "";
 
-    const signWindowWindow = new SignInWindow(
-      this.parentEl,
-      this.stateApp,
-      this.fullApp,
-      this.loader,
-    );
+    localStorage.setItem("page", JSON.stringify({ page: "singInWindow" }));
 
-    signWindowWindow.bindToDOM();
+    location.reload();
   }
 
   onСreateUser(e) {
