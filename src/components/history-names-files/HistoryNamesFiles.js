@@ -1,4 +1,4 @@
-import ListMediaFiles from "../list-mediafiles/ListMediafiles";
+import ListMediaFile from "../list-mediafiles/ListMediaFile";
 import Div from "../ui/Div/Div";
 import Heading from "../ui/Heading/Heading";
 
@@ -43,7 +43,7 @@ export default class HistoryNamesFiles {
     this.historyFilesContainer.appendChild(this.titleHistoryFiles);
     this.parentEl.appendChild(this.historyFilesContainer);
 
-    this.listMediaFiles = new ListMediaFiles(
+    this.listMediaFiles = new ListMediaFile(
       this.historyFilesContainer,
       this.api,
       this.data,

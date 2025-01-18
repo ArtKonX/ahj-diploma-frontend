@@ -15,7 +15,7 @@ import VideoMessage from "../video-message/VideoMessage";
 import AudioMessage from "../audio-message/AudioMessage";
 import FileMessage from "../file-message/FileMessage";
 
-export default class ListMediaFiles {
+export default class ListMediaFile {
   constructor(
     parentEl,
     api,
